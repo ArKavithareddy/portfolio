@@ -1,0 +1,71 @@
+
+@media(max-width:992px){
+
+.container{
+    flex-direction:column;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.navbar{
+    flex-direction:column;
+}
+
+.navbar ul{
+    margin-top:15px;
+}
+
+.about-image img{
+    width:300px;
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.navbar ul li{
+    margin:10px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero h2{
+    font-size:22px;
+}
+
+section{
+    padding:70px 20px;
+}
+
+}
+/* Animation */
+
+.service-card,
+.project,
+.about,
+.cta{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:1s;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
